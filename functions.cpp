@@ -14,7 +14,7 @@ void printLine() {
 void viewHistory(std::vector<int> const userInputs, std::vector<int> const userInputs_converted) {
     system("cls");
     for (int i = 0; i < userInputs.size(); i++) {
-        std::cout << userInputs[i] << " miles is " << " == " << userInputs_converted[i] << " slinkies " << std::endl << std::endl;
+        std::cout << userInputs[i] << " miles is " << "== " << userInputs_converted[i] << " slinkies " << std::endl << std::endl;
     }
 }
 
