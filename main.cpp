@@ -42,6 +42,7 @@ int main() {
             default:
             std::cout << "Invalid Option. Please Enter again: ";
             std::cin.clear();
+            std::cin.ignore(100, '\n');
             goto ASKRESPONSE;
             break;
         }
