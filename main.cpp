@@ -18,7 +18,8 @@ int main() {
         std::cout << "[A.] Convert Distance in Miles" << std::endl;
         std::cout << "[B.] View Input History" << std::endl;
         std::cout << "[C.] Exit Application" << std::endl;
-        ASKRESPONSE: std::cin >> userResponse; // ASKRESPONSE JUMPSTATEMENT
+        std::cin >> userResponse;
+        std::cin.ignore(250, '\n');
         switch (userResponse) {
             case('A'):
             case('a'):
@@ -42,8 +43,6 @@ int main() {
             default:
             std::cout << "Invalid Option. Please Enter again: ";
             std::cin.clear();
-            std::cin.ignore(100, '\n');
-            goto ASKRESPONSE;
             break;
         }
     }
