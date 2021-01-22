@@ -26,7 +26,7 @@ int main() {
             std::cout << "Enter distance in miles: ";
             stored_userInputs.push_back(getUserInput());
             stored_conversions.push_back(convertDistance(stored_userInputs[stored_userInputs.size() - 1]));
-            system("cls");
+            clearScreen();
             printLine();
             std::cout << stored_userInputs[stored_userInputs.size() - 1] << " miles is around " << stored_conversions[stored_conversions.size() - 1] << " slinkies" << std::endl;
             printLine();
@@ -43,6 +43,7 @@ int main() {
             default:
             std::cout << "Invalid Option. Please Enter again: ";
             std::cin.clear();
+            clearScreen();
             break;
         }
     }
