@@ -5,6 +5,14 @@
 #include <vector>
 #include "functionsHeader.h"
 
+void clearScreen() {
+ #ifdef _WIN32
+    system("cls");
+  #else
+    system("clear");
+ #endif
+}
+
 
 void printLine() {
     // functions prints a line 
