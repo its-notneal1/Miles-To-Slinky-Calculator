@@ -6,6 +6,8 @@ Created by Neal 12/27
 Prototype functions exist in here
 */
 
+void clearScreen();
+
 int getUserInput();
 void printLine();
 void viewHistory(std::vector<int> const, std::vector<int> const);
